@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity implements NoteAdapter.ItemC
 
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        noteAdapter = new NoteAdapter(this, this);
+        noteAdapter = new NoteAdapter(this);
         recyclerView.setAdapter(noteAdapter);
 
         viewModel = new ViewModelProvider(this).get(NoteViewModel.class);

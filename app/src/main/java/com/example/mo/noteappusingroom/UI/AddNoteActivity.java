@@ -49,8 +49,8 @@ public class AddNoteActivity extends AppCompatActivity {
             note.setId(id);
             noteViewModel.update(note);
             finish();
-        }else {
-            noteViewModel.insert(new Note(title, description));
+        } else {
+            if (!title.isEmpty() || !description.isEmpty()) noteViewModel.insert(new Note(title, description));
             finish();
         }
     }

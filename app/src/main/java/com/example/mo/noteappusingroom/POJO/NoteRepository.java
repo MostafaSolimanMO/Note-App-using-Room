@@ -32,8 +32,4 @@ public class NoteRepository {
         NoteRoomDatabase.databaseWriteExecutor.execute(() -> INoteDao.deleteNote(note));
     }
 
-    public void deleteAllNotes() {
-        NoteRoomDatabase.databaseWriteExecutor.execute(() -> INoteDao.deleteAllNotes());
-    }
-
 }

@@ -2,7 +2,7 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
+    android:layout_margin="6dp"
     android:orientation="vertical">
 
     <LinearLayout
@@ -25,7 +25,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="4dp"
-            android:paddingBottom="4dp"
+            android:paddingRight="4dp"
+            android:maxLines="5"
+            android:paddingBottom="8dp"
             android:text="I have tow lectures and three main subject s and I will go to my grand mother after finishing to college and I will met "
             android:textSize="18sp" />
 

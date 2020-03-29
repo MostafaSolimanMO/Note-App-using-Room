@@ -25,6 +25,4 @@ public interface INoteDao {
     @Delete
     void deleteNote(Note note);
 
-    @Query("DELETE FROM note_table")
-    void deleteAllNotes();
 }
